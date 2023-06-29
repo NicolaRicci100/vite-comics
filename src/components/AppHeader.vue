@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 header {
-  height: 120px;
+  height: 110px;
 }
 
 nav {
