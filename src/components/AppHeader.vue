@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 header {
-  height: 100px;
+  height: 120px;
 }
 
 nav {
@@ -91,7 +91,7 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   color: gray;
-  gap: 10px;
+  gap: 15px;
 }
 
 ul li:hover {

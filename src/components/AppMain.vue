@@ -83,14 +83,14 @@ section {
 }
 
 .content {
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   font-size: 30px;
 }
 
 .navbar {
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   font-size: 15px;
@@ -128,7 +128,7 @@ section {
   display: flex;
   gap: 20px;
   color: white;
-  height: 350px;
+  min-height: 50vh;
   padding-top: 50px;
 }
 
