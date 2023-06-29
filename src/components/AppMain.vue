@@ -36,9 +36,28 @@ export default {
       </li>
     </ul>
   </section>
-  <section>
+  <section class="background">
     <div class="container main-footer">
-      <ul>dc comics
+      <div>
+        <ul><strong>DC COMICS</strong>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+        <ul><strong>SHOP</strong>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+      </div>
+      <ul><strong>DC</strong>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
         <li>lorem</li>
         <li>lorem</li>
         <li>lorem</li>
@@ -47,24 +66,7 @@ export default {
         <li>lorem</li>
         <li>lorem</li>
       </ul>
-      <ul>shop
-        <li>lorem</li>
-        <li>lorem</li>
-      </ul>
-      <ul>dc
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-        <li>lorem</li>
-      </ul>
-      <ul>sites
+      <ul><strong>SITES</strong>
         <li>lorem</li>
         <li>lorem</li>
         <li>lorem</li>
@@ -116,8 +118,27 @@ section {
   padding: 10px;
 }
 
+.background {
+  background-image: url(../assets/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .main-footer {
   display: flex;
+  gap: 20px;
+  color: white;
+  height: 350px;
+  padding-top: 50px;
+}
+
+.main-footer ul {
+  margin: 15px;
+}
+
+.main-footer ul li {
+  font-size: 12px;
+  font-weight: 300;
 }
 
 ul li {
