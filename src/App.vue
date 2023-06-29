@@ -36,6 +36,15 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+ul li {
+  margin: 0 10px;
 }
 </style>
