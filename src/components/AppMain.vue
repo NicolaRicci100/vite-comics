@@ -7,9 +7,9 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="first-section">
     <div class="container content">
-      <p>Content goes here</p>
+      <p>&rarr; Content goes here &larr;</p>
     </div>
   </section>
   <section>
@@ -62,7 +62,6 @@ export default {
 
 <style scoped>
 section {
-  background-color: gainsboro;
   min-height: 100px;
 }
 
@@ -71,6 +70,13 @@ section {
   height: 100px;
   display: flex;
   align-items: center;
+}
+
+.first-section {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .navbar {

@@ -74,17 +74,31 @@ export default {
 
 <style scoped>
 header {
-  height: 120px;
+  height: 100px;
 }
 
 nav {
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: gray;
+}
+
+ul li:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
+
+img {
+  width: 70%;
 }
 </style>
