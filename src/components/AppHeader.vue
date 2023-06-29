@@ -93,6 +93,10 @@ ul {
   color: gray;
 }
 
+ul li {
+  margin: 0 10px;
+}
+
 ul li:hover {
   color: deepskyblue;
   cursor: pointer;

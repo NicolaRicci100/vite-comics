@@ -41,10 +41,5 @@ img {
 
 ul {
   list-style-type: none;
-  margin: 0 10px;
-}
-
-ul li {
-  margin: 0 10px;
 }
 </style>

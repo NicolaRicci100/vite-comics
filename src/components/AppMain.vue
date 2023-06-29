@@ -12,13 +12,28 @@ export default {
       <p>&rarr; Content goes here &larr;</p>
     </div>
   </section>
-  <section>
+  <section class="second-section">
     <ul class="container navbar">
-      <li>digital comics</li>
-      <li>dc merchandise</li>
-      <li>subscription</li>
-      <li>comic shop locator</li>
-      <li>dc power visa</li>
+      <li>
+        <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
+        <p>digital comics</p>
+      </li>
+      <li>
+        <img src="../assets/img/buy-comics-merchandise.png" alt="Merchandise">
+        <p>dc merchandise</p>
+      </li>
+      <li>
+        <img src="../assets/img/buy-comics-subscriptions.png" alt="Subscriptions">
+        <p>subscription</p>
+      </li>
+      <li>
+        <img src="../assets/img/buy-comics-shop-locator.png" alt="Shop Locator">
+        <p>comic shop locator</p>
+      </li>
+      <li>
+        <img src="../assets/img/buy-dc-power-visa.svg" alt="Power Visa">
+        <p>dc power visa</p>
+      </li>
     </ul>
   </section>
   <section>
@@ -65,11 +80,18 @@ section {
   min-height: 100px;
 }
 
-.content,
+.content {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
 .navbar {
   height: 100px;
   display: flex;
   align-items: center;
+  font-size: 15px;
 }
 
 .first-section {
@@ -79,11 +101,28 @@ section {
   font-size: 25px;
 }
 
+.second-section {
+  background-color: cornflowerblue;
+  color: white;
+  text-transform: uppercase;
+}
+
 .navbar {
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.navbar img {
+  height: 50px;
+  padding: 10px;
 }
 
 .main-footer {
   display: flex;
+  align-items: center;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
 }
 </style>
