@@ -118,7 +118,6 @@ section {
 
 .main-footer {
   display: flex;
-  align-items: center;
 }
 
 ul li {

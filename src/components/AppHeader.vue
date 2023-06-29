@@ -91,10 +91,7 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   color: gray;
-}
-
-ul li {
-  margin: 0 10px;
+  gap: 10px;
 }
 
 ul li:hover {
