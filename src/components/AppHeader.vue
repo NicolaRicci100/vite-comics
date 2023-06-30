@@ -75,6 +75,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/colors' as *;
+
 header {
   height: 110px;
 }
@@ -97,7 +99,7 @@ ul {
 
   li a.active,
   li a:hover {
-    color: rgb(0, 130, 249);
+    color: $blue;
     cursor: pointer;
   }
 }

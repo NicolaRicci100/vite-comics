@@ -79,6 +79,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/colors' as *;
+
 section {
   min-height: 100px;
 }
@@ -98,14 +100,14 @@ section {
 }
 
 .first-section {
-  background-color: rgb(28, 28, 28);
+  background-color: $dark;
   color: white;
   font-weight: 700;
   font-size: 25px;
 }
 
 .second-section {
-  background-color: rgb(0, 130, 249);
+  background-color: $blue;
   color: white;
   text-transform: uppercase;
 }

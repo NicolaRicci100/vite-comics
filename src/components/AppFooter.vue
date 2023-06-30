@@ -23,15 +23,17 @@ export default {
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/colors' as *;
+
 footer {
   height: 100px;
-  background-color: rgb(28, 28, 28);
-  color: rgb(0, 130, 249);
+  background-color: $dark;
+  color: $blue;
 }
 
 .sign {
-  border: 2px solid rgb(0, 130, 249);
+  border: 2px solid $blue;
   padding: 10px;
 }
 
