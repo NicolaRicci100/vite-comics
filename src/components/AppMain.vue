@@ -36,7 +36,7 @@ export default {
       </li>
     </ul>
   </section>
-  <section class="background">
+  <section class="background logo">
     <div class="container main-footer">
       <div>
         <ul><strong>DC COMICS</strong>
@@ -83,10 +83,10 @@ section {
 }
 
 .content {
-  height: 120px;
   display: flex;
   align-items: center;
   font-size: 30px;
+  min-height: 100px;
 }
 
 .navbar {
@@ -97,14 +97,14 @@ section {
 }
 
 .first-section {
-  background-color: black;
+  background-color: rgb(28, 28, 28);
   color: white;
   font-weight: 700;
   font-size: 25px;
 }
 
 .second-section {
-  background-color: cornflowerblue;
+  background-color: rgb(0, 130, 249);
   color: white;
   text-transform: uppercase;
 }
@@ -121,15 +121,15 @@ section {
 .background {
   background-image: url(../assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main-footer {
   display: flex;
   gap: 20px;
   color: white;
-  min-height: 50vh;
-  padding-top: 50px;
+  min-height: 200px;
+  padding: 50px 0;
 }
 
 .main-footer ul {

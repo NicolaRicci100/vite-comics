@@ -26,12 +26,12 @@ export default {
 <style scoped>
 footer {
   height: 100px;
-  background-color: black;
-  color: deepskyblue;
+  background-color: rgb(28, 28, 28);
+  color: rgb(0, 130, 249);
 }
 
 .sign {
-  border: 2px solid blue;
+  border: 2px solid rgb(0, 130, 249);
   padding: 10px;
 }
 

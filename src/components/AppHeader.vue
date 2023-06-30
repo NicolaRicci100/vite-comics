@@ -95,7 +95,7 @@ ul {
 }
 
 ul li:hover {
-  color: deepskyblue;
+  color: rgb(0, 130, 249);
   cursor: pointer;
 }
 
