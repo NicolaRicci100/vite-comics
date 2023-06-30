@@ -66,13 +66,15 @@ export default {
         <img src="../assets/img/dc-logo.png" alt="Logo DC">
       </figure>
       <ul>
-        <li v-for="link in links" :key="link.text">{{ link.text }}</li>
+        <li v-for="link in links" :key="link.text">
+          <a :class="{ active: link.current }" :href="link.url">{{ link.text }}</a>
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   height: 110px;
 }
@@ -92,11 +94,12 @@ ul {
   text-transform: uppercase;
   color: gray;
   gap: 15px;
-}
 
-ul li:hover {
-  color: rgb(0, 130, 249);
-  cursor: pointer;
+  li a.active,
+  li a:hover {
+    color: rgb(0, 130, 249);
+    cursor: pointer;
+  }
 }
 
 img {

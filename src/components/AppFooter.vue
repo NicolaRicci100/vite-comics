@@ -36,7 +36,6 @@ footer {
 }
 
 a {
-  text-decoration: none;
   color: white;
   text-transform: uppercase;
   padding: 10px;

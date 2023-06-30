@@ -1,7 +1,8 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+    }
   }
 }
 </script>
@@ -77,7 +78,7 @@ export default {
   </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 section {
   min-height: 100px;
 }
@@ -134,14 +135,16 @@ section {
 
 .main-footer ul {
   margin: 15px;
+
+  li {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 2px 0;
+    color: gainsboro;
+  }
+
 }
 
-.main-footer ul li {
-  font-size: 12px;
-  font-weight: 300;
-  padding: 2px 0;
-  color: gainsboro;
-}
 
 ul li {
   display: flex;

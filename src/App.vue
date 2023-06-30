@@ -42,4 +42,9 @@ img {
 ul {
   list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+}
 </style>
