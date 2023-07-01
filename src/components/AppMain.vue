@@ -98,7 +98,10 @@ export default {
 <template>
   <section class="first-section">
     <div class="container content">
-      <ComicCard />
+      <ComicCard :comics="comics" />
+    </div>
+    <div class="load">
+      <a href="#">Load More</a>
     </div>
   </section>
   <section class="second-section">
@@ -176,8 +179,24 @@ section {
 .content {
   display: flex;
   align-items: center;
-  font-size: 30px;
   min-height: 100px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  a {
+    background-color: $blue;
+    padding: 10px 40px;
+  }
+
 }
 
 .navbar {
@@ -190,8 +209,6 @@ section {
 .first-section {
   background-color: $dark;
   color: white;
-  font-weight: 700;
-  font-size: 25px;
 }
 
 .second-section {

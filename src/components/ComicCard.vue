@@ -1,5 +1,8 @@
 <script>
 export default {
+  props: {
+    comics: Array
+  },
   data() {
     return {}
   }
@@ -7,9 +10,42 @@ export default {
 </script>
 
 <template>
-  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam a officia quisquam delectus, exercitationem
-    porro veritatis, optio voluptatem sint doloribus libero saepe minima assumenda expedita blanditiis? Labore, quos
-    quisquam.</h1>
+  <div class="card-container">
+    <div class="card" v-for="comic in comics" :key="comic.series">
+      <figure>
+        <img :src="comic.thumb" :alt="comic.series">
+      </figure>
+      <div>{{ comic.series }}</div>
+    </div>
+  </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  height: 400px;
+  width: 90%;
+}
+
+.card {
+  flex-basis: calc(100% / 6);
+  height: 100px;
+  padding: 10px;
+}
+
+figure {
+  height: 160px;
+  width: auto;
+  margin: 10px 0 10px;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-position: 0 0;
+}
+</style>
