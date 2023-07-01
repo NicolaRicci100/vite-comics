@@ -1,5 +1,7 @@
 <script>
+import ComicCard from './ComicCard.vue';
 export default {
+  components: { ComicCard },
   data() {
     return {
       comics: [
@@ -96,7 +98,7 @@ export default {
 <template>
   <section class="first-section">
     <div class="container content">
-      <p>&rarr; Content goes here &larr;</p>
+      <ComicCard />
     </div>
   </section>
   <section class="second-section">
