@@ -97,10 +97,15 @@ export default {
 
 <template>
   <section class="first-section">
+    <div class="jumbo-background">
+      <div class="blue-button mid-section">
+        <a href="#">Current Series</a>
+      </div>
+    </div>
     <div class="container content">
       <ComicCard :comics="comics" />
     </div>
-    <div class="load">
+    <div class="blue-button">
       <a href="#">Load More</a>
     </div>
   </section>
@@ -176,6 +181,15 @@ section {
   min-height: 100px;
 }
 
+.jumbo-background {
+  height: 250px;
+  width: 100%;
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -184,7 +198,7 @@ section {
   text-transform: uppercase;
 }
 
-.load {
+.blue-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,8 +209,18 @@ section {
   a {
     background-color: $blue;
     padding: 10px 40px;
-  }
+    border: 2px solid $blue;
 
+    &:hover {
+      border: 2px solid white;
+    }
+  }
+}
+
+.mid-section {
+  position: relative;
+  bottom: -208px;
+  left: -516px;
 }
 
 .navbar {
@@ -248,6 +272,10 @@ section {
     font-weight: 300;
     padding: 2px 0;
     color: gainsboro;
+
+    &:hover {
+      color: $blue;
+    }
   }
 
 }
@@ -256,5 +284,6 @@ section {
 ul li {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 </style>

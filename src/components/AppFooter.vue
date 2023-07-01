@@ -13,11 +13,11 @@ export default {
         <a href="#">sign up now!</a>
       </div>
       <ul>follow us
-        <li><img src="../assets/img/footer-periscope.png" alt="Facebook"></li>
+        <li><img src="../assets/img/footer-periscope.png" alt="Periscope"></li>
         <li><img src="../assets/img/footer-facebook.png" alt="Facebook"></li>
-        <li><img src="../assets/img/footer-pinterest.png" alt="Facebook"></li>
-        <li><img src="../assets/img/footer-youtube.png" alt="Facebook"></li>
-        <li><img src="../assets/img/footer-twitter.png" alt="Facebook"></li>
+        <li><img src="../assets/img/footer-pinterest.png" alt="Pinterest"></li>
+        <li><img src="../assets/img/footer-youtube.png" alt="Youtube"></li>
+        <li><img src="../assets/img/footer-twitter.png" alt="Twitter"></li>
       </ul>
     </section>
   </footer>
@@ -35,6 +35,15 @@ footer {
 .sign {
   border: 2px solid $blue;
   padding: 10px;
+
+  &:hover {
+    border: 2px solid white;
+    cursor: pointer;
+
+    a {
+      color: $blue;
+    }
+  }
 }
 
 a {

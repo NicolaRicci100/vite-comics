@@ -21,9 +21,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/colors' as *;
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: 50px;
   height: 400px;
   width: 90%;
@@ -31,14 +35,21 @@ export default {
 
 .card {
   flex-basis: calc(100% / 6);
-  height: 100px;
-  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 10px;
+  padding: 0 10px
 }
 
 figure {
   height: 160px;
-  width: auto;
+  width: 100px;
   margin: 10px 0 10px;
+  cursor: pointer;
 }
 
 img {
@@ -46,6 +57,12 @@ img {
   display: block;
   height: 100%;
   width: 100%;
-  object-position: 0 0;
+  object-position: 50% 50%;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid $blue;
+  }
+
 }
 </style>
